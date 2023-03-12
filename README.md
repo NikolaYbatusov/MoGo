@@ -1,2 +1,2 @@
 # MoGo
-ttps://nikolaybatusov.github.io/MoGo/
+https://nikolaybatusov.github.io/MoGo/
