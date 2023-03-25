@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">MoGo</div>
-                <nav>
+                <nav class="nav">
                     <a class="nav__link" href="#">ABOUT</a>
                     <a class="nav__link" href="#">SERVICE</a>
                     <a class="nav__link" href="#">WORK</a>
@@ -41,10 +41,23 @@
             <div class="slider">
                 <div class="container">
                     <div class="slider__inner">
-                        <div class="slider__item active"><span class="slider__num">01</span> Intro</div>
-                        <div class="slider__item"><span class="slider__num">02</span> Work</div>
-                        <div class="slider__item"><span class="slider__num">03</span> About</div>
-                        <div class="slider__item"><span class="slider__num">04</span> Contact</div>
+                        <div class="slider__item active">
+                            <span class="slider__num">01</span>
+                            <span class="slider__text"> Intro</span>
+                        </div>
+
+                        <div class="slider__item">
+                            <span class="slider__num">02</span>
+                            <span class="slider__text"> Work</span>
+                        </div>
+                        <div class="slider__item">
+                            <span class="slider__num">03</span>
+                            <span class="slider__text"> About</span>
+                        </div>
+                        <div class="slider__item">
+                            <span class="slider__num">04</span>
+                            <span class="slider__text"> Contact</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,7 +85,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/about/1.jpg" alt="">
+                            <img src="./assets/images/about/1.jpg" alt="">
                         </div>
                         <div class="card__text">super team</div>
                     </div>
@@ -80,7 +93,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/about/2.jpg" alt="">
+                            <img src="./assets/images/about/2.jpg" alt="">
                         </div>
                         <div class="card__text">super team</div>
 
@@ -89,7 +102,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/about/3.jpg" alt="">
+                            <img src="./assets/images/about/3.jpg" alt="">
                         </div>
                         <div class="card__text">super team</div>
                     </div>
@@ -133,19 +146,19 @@
             </div>
             <div class="services">
                 <div class="services__item">
-                    <img class="service__icon" src="assets/images/services/photography.png" alt="">
+                    <img class="service__icon" src="./assets/images/services/photography.png" alt="">
                     <div class="service__title">photography</div>
                     <div class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor.</div>
                 </div>
                 <div class="services__item">
-                    <img class="service__icon" src="assets/images/services/web design.png" alt="">
+                    <img class="service__icon" src="./assets/images/services/web design.png" alt="">
                     <div class="service__title">web design</div>
                     <div class="service__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </div>
                 <div class="services__item">
-                    <img class="service__icon" src="assets/images/services/creativity.png" alt="">
+                    <img class="service__icon" src="./assets/images/services/creativity.png" alt="">
                     <div class="service__title">creativity</div>
                     <div class="service__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
@@ -155,18 +168,18 @@
 
             <div class="services">
                 <div class="services__item">
-                    <img class="service__icon" src="assets/images/services/seo.png" alt="">
+                    <img class="service__icon" src="./assets/images/services/seo.png" alt="">
                     <div class="service__title">seo</div>
                     <div class="service__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
                 </div>
                 <div class="services__item">
-                    <img class="service__icon" src="assets/images/services/css.html.png" alt="">
+                    <img class="service__icon" src="./assets/images/services/css.html.png" alt="">
                     <div class="service__title">css/html</div>
                     <div class="service__text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
                     </div>
                 </div>
                 <div class="services__item">
-                    <img class="service__icon" src="assets/images/services/digital.png" alt="">
+                    <img class="service__icon" src="./assets/images/services/digital.png" alt="">
                     <div class="service__title">digital</div>
                     <div class="service__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
@@ -182,8 +195,8 @@
                 <h2 class="section__title">Unique design</h2>
             </div>
             <div class="devises">
-                <img class="devises__item" src="/assets/images/ipad.png" alt="">
-                <img class="devises__item--iphone" src="/assets/images/iphone.png" alt="">
+                <img class="devises__item" src="./assets/images/ipad.png" alt="">
+                <img class="devises__item--iphone" src="./assets/images/iphone.png" alt="">
             </div>
         </div>
     </section>
@@ -203,14 +216,14 @@
             </div>
             <div class="wedo">
                 <div class="wedo__item">
-                    <img src=".//assets/images/wedobg.jpg" alt="">
+                    <img class="wedo__img" src="./assets/images/wedobg.jpg" alt="">
                 </div>
                 <div class="wedo__item">
                     <div class="accordion">
                         <div class="accordion__item">
                             <div class="accordion__header">
                                 <div class="accordion__title">Photography</div>
-                                <img class="accordion__icon" src="assets/images/wedo/photography.png" alt="">
+                                <img class="accordion__icon" src="./assets/images/wedo/photography.png" alt="">
                             </div>
                             <div class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                 do
@@ -227,7 +240,7 @@
                         <div class="accordion__item active">
                             <div class="accordion__header">
                                 <div class="accordion__title">creativity</div>
-                                <img class="accordion__icon" src="assets/images/wedo/creativity.png" alt="">
+                                <img class="accordion__icon" src="./assets/images/wedo/creativity.png" alt="">
                             </div>
                             <div class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                 do
@@ -243,7 +256,7 @@
                         <div class="accordion__item">
                             <div class="accordion__header">
                                 <div class="accordion__title">web design</div>
-                                <img class="accordion__icon" src="assets/images/wedo/web design.png" alt="">
+                                <img class="accordion__icon" src="./assets/images/wedo/web design.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -259,7 +272,7 @@
                 <a class="reviews__btn reviews__btn--pref" href="#">Pref</a>
                 <a class="reviews__btn reviews__btn--next" href="#">next</a>
                 <div class="reviews__item">
-                    <img class="reviews__photo" src="assets/images/revievs-icon/reviews__author.png" alt="">
+                    <img class="reviews__photo" src="./assets/images/revievs-icon/reviews__author.png" alt="">
 
                     <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -289,7 +302,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/team/1.jpg" alt="">
+                            <img src="./assets/images/team/1.jpg" alt="">
                         </div>
                         <div class="card__text">
                             <div class="social">
@@ -317,7 +330,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/team/2.jpg" alt="">
+                            <img src="./assets/images/team/2.jpg" alt="">
                         </div>
                         <div class="card__text">
                             <div class="social">
@@ -344,7 +357,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/team/3.jpg" alt="">
+                            <img src="./assets/images/team/3.jpg" alt="">
                         </div>
                         <div class="card__text">
                             <div class="social">
@@ -372,376 +385,383 @@
         </div>
     </section>
 
-    <div class="logos">
+    <div class="section  section--gray">
         <div class="container">
-            <div class="logos__content">
+            <div class="logos">
                 <div class="logos__item">
-                    <img class="logos__img" src="assets/images/logos/1.png" alt="">
+                    <img class="logos__img" src="./assets/images/logos/1.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="assets/images/logos/2.png" alt="">
+                    <img class="logos__img" src="./assets/images/logos/2.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="assets/images/logos/3.png" alt="">
+                    <img class="logos__img" src="./assets/images/logos/3.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="assets/images/logos/4.png" alt="">
+                    <img class="logos__img" src="./assets/images/logos/4.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="assets/images/logos/5.png" alt="">
+                    <img class="logos__img" src="./assets/images/logos/5.png" alt="">
                 </div>
                 <div class="logos__item">
-                    <img class="logos__img" src="assets/images/logos/6.png" alt="">
+                    <img class="logos__img" src="./assets/images/logos/6.png" alt="">
                 </div>
             </div>
 
         </div>
+    </div>
 
-        <section class="section">
-            <div class="container">
-                <div class="section__header">
-                    <h3 class="section__subtitle">What we do</h3>
-                    <h2 class="section__title">some of our work</h2>
-                    <div class="section__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut
-                            aliquip ex ea commodo consequat. </p>
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__subtitle">What we do</h3>
+                <h2 class="section__title">some of our work</h2>
+                <div class="section__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut
+                        aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/1.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/2.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
                     </div>
                 </div>
             </div>
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/3.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/4.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/5.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/6.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__img" src="./assets/images/col/7.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__icon"> <img src="./assets/images/col/icon/works icn.png" alt=""></div>
+                        <div class="works__title">creatively designed</div>
+                        <div class="works__text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--works-->
+    </section>
 
-            <div class="works">
-                <div class="works__col">
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/1.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/2.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works__col">
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/3.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/4.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works__col">
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/5.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works__col">
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/6.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                    <div class="works__item">
-                        <img class="works__img" src="assets/images/col/7.jpg" alt="">
-                        <div class="works__info">
-                            <div class="works__icon"> <img src="assets/images/col/icon/works icn.png" alt=""></div>
-                            <div class="works__title">creatively designed</div>
-                            <div class="works__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!--works-->
-        </section>
+    <div class="section">
+        <div class="container">
+            <div class="reviews">
+                <a class="reviews__btn reviews__btn--pref" href="#">Pref</a>
+                <a class="reviews__btn reviews__btn--next" href="#">next</a>
+                <div class="reviews__item">
+                    <img class="reviews__photo" src="./assets/images/avtr.png" alt="">
 
-        <div class="section">
-            <div class="container">
-                <div class="reviews">
-                    <a class="reviews__btn reviews__btn--pref" href="#">Pref</a>
-                    <a class="reviews__btn reviews__btn--next" href="#">next</a>
-                    <div class="reviews__item">
-                        <img class="reviews__photo" src="assets/images/avtr.png" alt="">
+                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation.”</div>
+                    <div class="reviews__author">Jon Doe</div>
 
-                        <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="section section--clients">
+        <div class="container">
+            <div class="clients">
+                <div class="section__header">
+                    <h3 class="section__subtitle">Happy Clients</h3>
+                    <h2 class="section__title">What people say</h2>
+                </div>
+                <div class="user">
+                    <div class="user__item">
+                        <div class="user__img"><img src="./assets/images/user/1.jpg" alt=""></div>
+                        <div class="user__name">Matthew Dix</div>
+                        <div class="user__post">Graphic Design</div>
+                        <div class="user__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.”</div>
-                        <div class="reviews__author">Jon Doe</div>
-
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                    </div>
+                    <div class="user__item">
+                        <div class="user__img"><img src="./assets/images/user/2.jpg" alt=""></div>
+                        <div class="user__name">Nick Karvounis</div>
+                        <div class="user__post">Graphic Design</div>
+                        <div class="user__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <section class="section section--clients">
-            <div class="container">
-                <div class="clients">
-                    <div class="section__header">
-                        <h3 class="section__subtitle">Happy Clients</h3>
-                        <h2 class="section__title">What people say</h2>
-                    </div>
-                    <div class="user">
-                        <div class="user__item">
-                            <div class="user__img"><img src="assets/images/user/1.jpg" alt=""></div>
-                            <div class="user__name">Matthew Dix</div>
+                <div class="user">
+                    <div class="user__item">
+                        <div class="user__img"><img src="./assets/images/user/3.jpg" alt=""></div>
+                        <div class="user__content">
+                            <div class="user__name">Jaelynn Castillo </div>
                             <div class="user__post">Graphic Design</div>
-                            <div class="user__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            <div class="user__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
-                        </div>
-                        <div class="user__item">
-                            <div class="user__img"><img src="assets/images/user/2.jpg" alt=""></div>
-                            <div class="user__name">Nick Karvounis</div>
-                            <div class="user__post">Graphic Design</div>
-                            <div class="user__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
                         </div>
                     </div>
-                    <div class="user">
-                        <div class="user__item">
-                            <div class="user__img"><img src="assets/images/user/3.jpg" alt=""></div>
-                            <div class="user__content">
-                                <div class="user__name">Jaelynn Castillo </div>
-                                <div class="user__post">Graphic Design</div>
-                                <div class="user__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
-                            </div>
-                        </div>
-                        <div class="user__item">
-                            <div class="user__img"><img src="assets/images/user/4.jpg" alt=""></div>
-                            <div class="user__name">Mike Petrucci</div>
-                            <div class="user__post">Graphic Design</div>
-                            <div class="user__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
-                        </div>
+                    <div class="user__item">
+                        <div class="user__img"><img src="./assets/images/user/4.jpg" alt=""></div>
+                        <div class="user__name">Mike Petrucci</div>
+                        <div class="user__post">Graphic Design</div>
+                        <div class="user__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section">
-            <div class="container">
-                <div class="section__header">
-                    <h3 class="section__subtitle">Our stories</h3>
-                    <h2 class="section__title">Latest blog</h2>
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__subtitle">Our stories</h3>
+                <h2 class="section__title">Latest blog</h2>
+            </div>
+            <div class="blog">
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <div class="blog__img"><img src="./assets/images/blog/1.jpg" alt=""></div>
+                        <div class="blog__date">
+                            <div class="blog__number">15</div>
+                            <div class="blog__month">Jan</div>
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">Lorem ipsum dolor sit amet</div>
+                        <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</div>
+                    </div>
+                    <div class="blog__statistics">
+                        <div class="blog__footer">
+                            <span class="blog__st">
+                                <i class="fa fa-eye"></i></i> 542
+                            </span>
+                            <span class="blog__st">
+                                <i class="fa fa-comment"></i>17
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="blog">
-                    <div class="blog__item">
-                        <div class="blog__header">
-                            <div class="blog__img"><img src="assets/images/blog/1.jpg" alt=""></div>
-                            <div class="blog__date">
-                                <div class="blog__number">15</div>
-                                <div class="blog__month">Jan</div>
-                            </div>
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <div class="blog__img"><img src="./assets/images/blog/2.jpg" alt=""></div>
+                        <div class="blog__date">
+                            <div class="blog__number">14</div>
+                            <div class="blog__month">Jan</div>
                         </div>
-                        <div class="blog__content">
-                            <div class="blog__title">Lorem ipsum dolor sit amet</div>
-                            <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</div>
-                        </div>
-                        <div class="blog__statistics">
-                            <div class="blog__footer">
-                                <span class="blog__st">
-                                    <i class="fa fa-eye"></i></i> 542
-                                </span>
-                                <span class="blog__st">
-                                    <i class="fa fa-comment"></i>17
-                                </span>
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="blog__item">
-                        <div class="blog__header">
-                            <div class="blog__img"><img src="assets/images/blog/2.jpg" alt=""></div>
-                            <div class="blog__date">
-                                <div class="blog__number">14</div>
-                                <div class="blog__month">Jan</div>
-                            </div>
-                        </div>
-                        <div class="blog__content">
-                            <div class="blog__title">sed do eiusmod tempor</div>
-                            <div class="blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.</div>
-                        </div>
-                        <div class="blog__statistics">
-                            <div class="blog__footer">
-                                <span class="blog__st">
-                                    <i class="fa fa-eye"></i>992</span>
-                                <span class="blog__st">
-                                    <i class="fa fa-comment"></i>42</span>
-                            </div>
-                        </div>
-
+                    <div class="blog__content">
+                        <div class="blog__title">sed do eiusmod tempor</div>
+                        <div class="blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.</div>
                     </div>
-                    <div class="blog__item">
-                        <div class="blog__header">
-                            <div class="blog__img"><img src="assets/images/blog/3.jpg" alt=""></div>
-                            <div class="blog__date">
-                                <div class="blog__number">12</div>
-                                <div class="blog__month">Jan</div>
-                            </div>
+                    <div class="blog__statistics">
+                        <div class="blog__footer">
+                            <span class="blog__st">
+                                <i class="fa fa-eye"></i>992</span>
+                            <span class="blog__st">
+                                <i class="fa fa-comment"></i>42</span>
                         </div>
-                        <div class="blog__content">
-                            <div class="blog__title">incididunt ut labore et dolore</div>
-                            <div class="blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua.</div>
-                        </div>
-                        <div class="blog__statistics">
-                            <div class="blog__footer">
-                                <span class="blog__st">
-                                    <i class="fa fa-eye"></i>542</span>
-                                <span class="blog__st">
-                                    <i class="fa fa-comment"></i>17</span>
-                            </div>
-                        </div>
-
                     </div>
+
+                </div>
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <div class="blog__img"><img src="./assets/images/blog/3.jpg" alt=""></div>
+                        <div class="blog__date">
+                            <div class="blog__number">12</div>
+                            <div class="blog__month">Jan</div>
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">incididunt ut labore et dolore</div>
+                        <div class="blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.</div>
+                    </div>
+                    <div class="blog__statistics">
+                        <div class="blog__footer">
+                            <span class="blog__st">
+                                <i class="fa fa-eye"></i>542</span>
+                            <span class="blog__st">
+                                <i class="fa fa-comment"></i>17</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section section--map">
-            <div class="container">
+    <section class="section section--map">
+        <div class="container">
 
-                <div class="open__map">
-                    <div class="map__icon"><i class="fa fa-location-dot"></i></div>
-                    <div class="map__title"> <a href="https://goo.gl/maps/nK1i4V3mB7REu6X39" target="__blank">open
-                            map</a>
+            <div class="open__map">
+                <div class="map__icon"><i class="fa fa-location-dot"></i></div>
+                <div class="map__title"> <a href="https://goo.gl/maps/nK1i4V3mB7REu6X39" target="__blank">open
+                        map</a>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__mogo footer__mogo--one">
+                    <div class="mogo__title">MoGo</div>
+                    <div class="mogo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                    <div class="mogo__stat"><b>15k</b> followers</div>
+                    <div class="mogo__falow">Follow Us:
+                        <a href="#" target="__blanc">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="__blanc">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" target="__blanc">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="__blanc">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" target="__blanc">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" target="__blanc">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" target="__blanc">7</a>
+                        <a href="#" target="__blanc">8</a>
+                    </div>
+                    <form class="subscribe" action="/" metod="post">
+                        <input class="subscribe__imput" type="email" name="name" placeholder="Your Email...">
+                        <button class="subscribe__btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer__blogs footer__blogs--two">
+                    <div class="blogs__title">blogs</div>
+                    <div class="blogs__info">
+                        <img class="blogs__img" src="./assets/images/footer/blogs/1.jpg">
+                        <div class="blogs__content">
+                            <a class="blogs__title__text" href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</a>
+                            <div class="blogs__data">Jan 9, 2016</div>
+                        </div>
+                    </div>
+                    <div class="blogs__info">
+                        <img class="blogs__img" src="./assets/images/footer/blogs/2.jpg" alt="">
+                        <div class="blogs__content">
+                            <a class="blogs__title__text" href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</a>
+                            <div class="blogs__data">Jan 9, 2016</div>
+                        </div>
+                    </div>
+                    <div class="blogs__info">
+                        <img class="blogs__img" src="./assets/images/footer/blogs/3.jpg" alt="">
+                        <div class="blogs__content">
+                            <a class="blogs__title__text" href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing</a>
+                            <div class="blogs__data">Jan 9, 2016</div>
+                        </div>
                     </div>
                 </div>
-        </section>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__mogo footer__mogo--one">
-                        <div class="mogo__title">MoGo</div>
-                        <div class="mogo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-                        <div class="mogo__stat"><b>15k</b> followers</div>
-                        <div class="mogo__falow">Follow Us:
-                            <a href="#" target="__blanc">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#" target="__blanc">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="#" target="__blanc">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#" target="__blanc">
-                                <i class="fa-brands fa-pinterest-p"></i>
-                            </a>
-                            <a href="#" target="__blanc">
-                                <i class="fa-brands fa-google-plus-g"></i>
-                            </a>
-                            <a href="#" target="__blanc">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <a href="#" target="__blanc">7</a>
-                            <a href="#" target="__blanc">8</a>
-                        </div>
-                        <form class="subscribe" action="/" metod="post">
-                            <input class="subscribe__imput" type="email" name="name" placeholder="Your Email...">
-                            <button class="subscribe__btn" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <div class="footer__blogs footer__blogs--two">
-                        <div class="blogs__title">blogs</div>
-                        <div class="blogs__info">
-                            <img class="blogs__img" src="assets/images/footer/blogs/1.jpg">
-                            <div class="blogs__content">
-                                <a class="blogs__title__text" href="#">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing</a>
-                                <div class="blogs__data">Jan 9, 2016</div>
+
+
+
+                <div class="footer__instagram footer__instagram--three">
+                    <div class="inst__title">instagram</div>
+                    <div class="instagram">
+                        <div class="inst__img">
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="blogs__info">
-                            <img class="blogs__img" src="assets/images/footer/blogs/2.jpg" alt="">
-                            <div class="blogs__content">
-                                <a class="blogs__title__text" href="#">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing</a>
-                                <div class="blogs__data">Jan 9, 2016</div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/2.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="blogs__info">
-                            <img class="blogs__img" src="assets/images/footer/blogs/3.jpg" alt="">
-                            <div class="blogs__content">
-                                <a class="blogs__title__text" href="#">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing</a>
-                                <div class="blogs__data">Jan 9, 2016</div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/3.jpg" alt="">
                             </div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/4.jpg" alt="">
+                            </div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/5.jpg" alt="">
+                            </div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/6.jpg" alt="">
+                            </div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/7.jpg" alt="">
+                            </div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/8.jpg" alt="">
+                            </div>
+                            <div class="inst__item">
+                                <img src="./assets/images/footer/instagram/9.jpg" alt="">
+                            </div>
+                            <p class="deck"> View more photos</p>
                         </div>
-                    </div>
-                    <div class="footer__instagram footer__instagram--three">
-                        <div class="blogs__title">instagram</div>
-                        <div class="instagram">
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/1.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/2.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/3.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/4.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/5.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/6.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/7.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/8.jpg" alt="">
-                            </a>
-                            <a class="inst__item" href="#" target="__blanc">
-                                <img src="assets/images/footer/instagram/9.jpg" alt="">
-                            </a>
-                        </div>
-                        <p class="deck"> View more photos</p>
                     </div>
                 </div>
+
             </div>
             <div class="copyright">
                 <p>© 2016 MoGo free PSD template by <span>Laaqiq</span> </p>
             </div>
-        </footer>
+    </footer>
 
 
 
@@ -754,7 +774,7 @@
 
 
 
-        <script src="https://kit.fontawesome.com/d7d33970d0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d7d33970d0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
