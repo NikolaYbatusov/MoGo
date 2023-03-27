@@ -39,6 +39,7 @@ h6 {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    min-height: 820px;
     background: url("../images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -89,7 +90,17 @@ h6 {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 1000;
+}
+.header--fixed {
+    padding: 10px 0;
+    background-color: #df7e77;
+    box-shadow: 0 4px 6px rgba(0, 0 ,0 ,0.2);
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
 }
 
 .header__inner {
@@ -151,6 +162,50 @@ h6 {
     opacity: 1;
 }
 
+/*  NAV TOGGLE */
+.nav-toggle {
+    display: none;
+    width: 30px;
+    padding: 20px 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 1;
+
+}
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.nav-toggle__item::before,
+.nav-toggle__item::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1; 
+}
+.nav-toggle__item::before {
+    top: -8px;
+
+}
+.nav-toggle__item::after {
+    bottom: -8px;
+}
+
 
 /* BUTTON */
 .btn {
@@ -179,7 +234,6 @@ h6 {
     bottom: 0;
     left: 0;
     z-index: 1;
-
 
 }
 
@@ -443,7 +497,6 @@ h6 {
 
 .wedo {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -15px;
     
 
@@ -542,11 +595,12 @@ h6 {
 .reviews__item {
     padding-left: 240px;
     position: relative;
-    margin-bottom: 100px;
 
 }
 
 .reviews__photo {
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: 0;
     left: 0;
@@ -668,23 +722,32 @@ h6 {
 
 .logos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #f8f8f8;
     width: 100%;
-    height: 250px;
+    margin: 0 -15px;
 }
 
 .logos__item {
-
+    padding: 0 15px;
     padding-top: 67px;
     padding-bottom: 67px;
     margin: 0 auto;
+}
+
+.logos__img{
+    flex-wrap: wrap;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* WORKS */
 
 .works {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .works__col {
@@ -755,21 +818,27 @@ h6 {
 }
 
 .user {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 60px;
 
 }
-
-.user__item {
+.user__content{
     width: 50%;
+}
+.user__item {
+    /* width: 50%; */
     padding: 0 45px 0 175px;
     position: relative;
+    margin-bottom: 60px;
 
 }
 
 .user__img {
     top: 0;
     left: 40px;
+    z-index: 1;
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -1154,17 +1223,40 @@ h6 {
     color: #ff0000;
 }
 
+@media (max-width: 1230px) {
+    /* INTRO */
+.intro__subtitle {
+    font-size: 50px;
 
-@media (max-width: 900px) {
+}
+
+.intro__title {
+    font-size: 120px;
+}
+/* REVIEVS */
+.reviews__text{
+    font-size: 20px;
+}
+.reviews__item{
+    padding-left: 188px;
+}
+/* USER */
+    .user__items{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 990px) {
 
     /* INTRO */
     .intro__subtitle {
-        font-size: 50px;
+        font-size: 35px;
 
     }
 
     .intro__title {
-        font-size: 120px;
+        font-size: 80px;
     }
 
     .stat{
@@ -1180,6 +1272,25 @@ h6 {
     }
     .stat__item:last-child{
         border-right: 0;
+    }
+    /* REVIEVS */
+    .reviews__photo{
+        position:static;
+        width: 100px;
+        height: 100px;
+    }
+    .reviews__item{
+        padding-left: 0;
+    }
+
+    /* USER */
+
+    .user{
+        width: 100%;
+
+    }
+    .user__item{
+        
     }
 
 
@@ -1240,7 +1351,7 @@ h6 {
     }
 
     /* STAT */
-    .stat__item{
+    .stat__item {
         width: 100%;
         border-bottom: 1px solid #b5eae0;
     }
@@ -1258,45 +1369,66 @@ h6 {
         margin: 12px 0;
     }
 
-    .services__item{
+    .services__item {
         flex: none;
         margin-bottom: 5px;
         width: 100%;
         max-width: 400px;
     }
 
-    .service__title{
+    .service__title {
         font-size: 12px;
         margin-bottom: 5px;
         
     }
-    .service__text{
+
+    .section__subtitle {
+        margin-top: 10px;
+
+    }
+
+
+    .service__text {
         font-size: 11px;
     }
 
-    .service__icon{
+    .service__icon {
         width:29px;
         height: 30px;
     }
 
-    .section--devises{
+    .section--devises {
         padding-bottom: 0;    
     }
 
     /* WEDO */
-    .wedo{
-        flex-wrap: wrap;
-    }
 
-    .wedo__img{
+    .wedo__img {
         display: none;
     
     }
-    .wedo__item{
-        width: 100%;
-        
+    .wedo__item {
+        width: 100%;  
+    }
+    
+    .header{
+        padding-top: 10px;;
+    }
+    .nav-toggle{
+        display: block;
     }
 
+    /* REVIEVS */
+
+    .reviews{
+        padding: 0px 34px;
+    } 
+
+    /*WORKS  */
+    .works__col{
+        flex: none;
+        width: 50%;
+    }
 
     /* MAX-WIDTH 770 */
 
@@ -1331,6 +1463,15 @@ h6 {
         bottom: -44px;
 
     }
+    /* LOGOS */
+    .logos{
+        flex-wrap: wrap;
+    }
 
+    /*WORKS  */
+    .works__col{
+        flex: none;
+        width: 100%;
+    }
 
 }
