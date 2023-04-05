@@ -28,7 +28,7 @@ h6 {
 .container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     margin: 0 auto;
 }
 
@@ -885,6 +885,7 @@ h6 {
 /* BLOG */
 
 .blog {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -963,6 +964,10 @@ h6 {
 
 .blog__st {
     margin-right: 15px;
+}
+
+.blog__footer {
+    margin: 15px;
 }
 
 /* MAP */
@@ -1548,7 +1553,11 @@ h6 {
     .stat__item {
         width: 100%;
         border-bottom: 1px solid #b5eae0;
-
 }
+
+.footer__blogs--two {
+    width: 100%;
+}
+
 }
 /* 575 */
