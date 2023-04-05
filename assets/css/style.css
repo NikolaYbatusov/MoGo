@@ -108,6 +108,8 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .header__logo {
@@ -235,6 +237,8 @@ h6 {
     bottom: 0;
     left: 0;
     z-index: 1;
+    box-sizing: border-box;
+    padding: 0 10px;
 
 }
 
@@ -684,7 +688,9 @@ h6 {
     border-right: 1px solid #f9bd87;
     text-decoration: none;
     color: #f38181;
+    text-align: center;
     transition: 0.5s;
+
 }
 
 .social__item:hover {
@@ -1020,6 +1026,8 @@ h6 {
 .footer {
     padding-top: 65px;
     background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .footer__inner {
