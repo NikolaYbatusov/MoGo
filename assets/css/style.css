@@ -439,10 +439,10 @@ h6 {
 }
 
 .services__item {
+    box-sizing: border-box;
     flex: 1 1 0;
-    padding-left: 85px;
+    padding-left: 68px;
     position: relative;
-    padding-right: 35px;
 }
 
 .service__icon {
@@ -1479,7 +1479,7 @@ h6 {
     /* BLOG */
     .blog {
         flex-wrap: wrap;
-        max-width: 380px;
+        /* max-width: 380px; */
         margin: 0 auto;
     }
     .blog__item {
