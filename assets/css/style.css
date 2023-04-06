@@ -1160,6 +1160,10 @@ h6 {
     width: 120px;
     height: 80px;
 }
+.blog__img img {
+    max-width: 100%;
+    
+}
 
 .blogs__content {
     padding-left: 20px;
