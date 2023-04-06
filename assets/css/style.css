@@ -445,14 +445,15 @@ h6 {
 .services__item {
     box-sizing: border-box;
     flex: 1 1 0;
-    padding-left: 68px;
+    padding-left: 48px;
     position: relative;
 }
 
 .service__icon {
+    box-sizing: border-box;
     position: absolute;
     top: 5px;
-    left: 28px;
+    left: 0;
     z-index: 1;
 }
 
@@ -1162,7 +1163,7 @@ h6 {
 }
 .blog__img img {
     max-width: 100%;
-    
+
 }
 
 .blogs__content {
